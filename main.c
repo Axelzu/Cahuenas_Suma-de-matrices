@@ -12,6 +12,13 @@ int main() {
     int matriz1[filas][columnas];
     int matriz2[filas][columnas];
     int resultado[filas][columnas];
-    
+    srand(time(NULL));
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            matriz1[i][j] = rand() % 101;
+            matriz2[i][j] = rand() % 101;
+        }
+    }
+
     return 0;
 }
