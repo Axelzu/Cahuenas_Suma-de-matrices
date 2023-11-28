@@ -3,7 +3,8 @@
 #include <time.h>
 
 int main() {
-    
+    int filas, columnas;
+
     printf("Ingrese el número de filas de las matrices: ");
     scanf("%d", &filas);
     printf("Ingrese el número de columnas de las matrices: ");
@@ -12,6 +13,8 @@ int main() {
     int matriz1[filas][columnas];
     int matriz2[filas][columnas];
     int resultado[filas][columnas];
+
+    
     srand(time(NULL));
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -19,6 +22,8 @@ int main() {
             matriz2[i][j] = rand() % 101;
         }
     }
+
+    
     printf("Matriz 1:\n");
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -35,11 +40,15 @@ int main() {
         }
         printf("\n");
     }
+
+    
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
             resultado[i][j] = matriz1[i][j] + matriz2[i][j];
         }
     }
+
+    
     printf("Matriz Resultado:\n");
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -47,7 +56,6 @@ int main() {
         }
         printf("\n");
     }
-
 
     return 0;
 }
