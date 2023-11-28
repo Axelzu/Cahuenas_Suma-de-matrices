@@ -35,6 +35,19 @@ int main() {
         }
         printf("\n");
     }
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            resultado[i][j] = matriz1[i][j] + matriz2[i][j];
+        }
+    }
+    printf("Matriz Resultado:\n");
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            printf("%d ", resultado[i][j]);
+        }
+        printf("\n");
+    }
+
 
     return 0;
 }
