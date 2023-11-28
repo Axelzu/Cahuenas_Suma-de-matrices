@@ -19,6 +19,22 @@ int main() {
             matriz2[i][j] = rand() % 101;
         }
     }
+    printf("Matriz 1:\n");
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            printf("%d ", matriz1[i][j]);
+        }
+        printf("\n");
+    }
+
+    
+    printf("Matriz 2:\n");
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            printf("%d ", matriz2[i][j]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
